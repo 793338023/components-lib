@@ -1,0 +1,45 @@
+{
+  "private": true,
+  "name": "dumi-lib",
+  "scripts": {
+    "start": "dumi dev",
+    "docs:build": "dumi build",
+    "build": "father-build",
+    "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
+    "test": "umi-test",
+    "test:coverage": "umi-test --coverage"
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "typings": "dist/index.d.ts",
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,less,md,json}": [
+      "prettier --write"
+    ],
+    "*.ts?(x)": [
+      "prettier --parser=typescript --write"
+    ]
+  },
+  "dependencies": {
+    "antd": "^4.1.0"
+  },
+  "devDependencies": {},
+  "peerDependencies": {
+    "react": "^16.12.0",
+    "@types/vfile-message": "^2.0.0",
+    "@umijs/preset-react": "1.x",
+    "@umijs/test": "^3.0.5",
+    "dumi": "^1.0.5",
+    "father-build": "^1.17.2",
+    "lint-staged": "^10.0.7",
+    "prettier": "^1.19.1",
+    "yorkie": "^2.0.0",
+    "react-is": "^16.13.1",
+    "hoist-non-react-statics": "^3.3.2",
+    "vfile-message": "^2.0.4",
+    "@types/hoist-non-react-statics": "^3.3.1"
+  }
+}
