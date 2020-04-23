@@ -263,7 +263,9 @@ regenerator()
 
 [rollup-plugin-regenerator](https://cnpmjs.org/package/rollup-plugin-regenerator)
 
-3. 使用 umd 时 external 外部引用的都要放到 peerDependencies 里，否则打包会报错。
+4. 使用 umd 时 external 外部引用的都要放到 peerDependencies 里，否则打包会报错。
+
+5. father-build 要使用`1.18.0`以上的，否则 father 某些 API 是无效的，father 可生成文档，打包等功能，而 father-build 只拥有 father 的打包功能
 
 #### [Rollup.js 中文网](https://www.rollupjs.com/guide/introduction/)
 
