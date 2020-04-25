@@ -267,6 +267,25 @@ regenerator()
 
 5. father-build 要使用`1.18.0`以上的，否则 father 某些 API 是无效的，father 可生成文档，打包等功能，而 father-build 只拥有 father 的打包功能
 
+6. .gitigrone 无效
+
+```
+清除git所有文件的缓存配置
+git rm -r --cached .
+
+然后修改.gitigrone
+add
+commit
+```
+
+7. babel 打包方式不会生成`.d.ts`,在 tsconfig.json compilerOptions 里配置 declaration
+
+```
+"declaration":true
+```
+
+#### [tsconfig.json 配置](https://www.cnblogs.com/cczlovexw/p/11527708.html)
+
 #### [Rollup.js 中文网](https://www.rollupjs.com/guide/introduction/)
 
 #### [Rollup 常用配置](https://www.jianshu.com/p/499bd3b93138)

@@ -1,16 +1,17 @@
-import { defineConfig } from 'dumi';
+import { defineConfig } from "dumi";
 
 export default defineConfig({
-  title: 'zzc的组件',
+  mode: "site",
+  title: "zzc的组件",
   extraBabelPlugins: [
     [
-      'babel-plugin-import',
+      "babel-plugin-import",
       {
-        libraryName: 'antd',
-        libraryDirectory: 'es',
+        libraryName: "antd",
+        libraryDirectory: "es",
         style: true,
       },
-      'antd',
+      "antd",
     ],
   ],
   // more config: https://d.umijs.org/config
