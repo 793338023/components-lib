@@ -16,8 +16,9 @@
   "module": "dist/index.esm.js",
   "typings": "dist/index.d.ts",
   "np": {
-		"tests": false
-	},
+    "tests": false,
+    "cleanup": false
+  },
   "gitHooks": {
     "pre-commit": "lint-staged"
   },
