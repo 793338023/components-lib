@@ -10,7 +10,8 @@
     "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
     "test": "umi-test",
     "test:coverage": "umi-test --coverage",
-    "np": "np"
+    "np": "np",
+    "new": "plop --plopfile ./plopfile.js"
   },
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
@@ -45,6 +46,8 @@
     "hoist-non-react-statics": "^3.3.2",
     "lint-staged": "^10.0.7",
     "np": "^6.2.3",
+    "path": "^0.12.7",
+    "plop": "^2.6.0",
     "prettier": "^1.19.1",
     "react": "^16.12.0",
     "react-is": "^16.13.1",
