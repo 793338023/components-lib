@@ -4,6 +4,7 @@
   "license": "MIT",
   "description": "个人测试",
   "scripts": {
+    "deploy": "gh-pages -d dist",
     "commit": "git-cz",
     "start": "dumi dev",
     "docs:build": "dumi build",
@@ -36,6 +37,7 @@
   },
   "dependencies": {
     "antd": "^4.1.0",
+    "gh-pages": "^3.2.0",
     "slash2": "^2.0.0"
   },
   "devDependencies": {

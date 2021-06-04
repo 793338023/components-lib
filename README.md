@@ -1,5 +1,7 @@
 # dumi library
 
+安装`gh-pages`进行 github 网站部署
+
 ## 开始
 
 [dumi 官网](https://d.umijs.org/)

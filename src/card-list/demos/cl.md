@@ -17,7 +17,7 @@ Demo:
  * background: '#f6f7f9'
  */
 import React from "react";
-import { CardList } from "dumi-lib";
+import { CardList } from "zzc-lib";
 
 export default () => <CardList title="zzc" />;
 ```

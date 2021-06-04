@@ -15,7 +15,7 @@ Demo:
 
 ```tsx
 import React from "react";
-import { Header } from "dumi-lib";
+import { Header } from "zzc-lib";
 
 export default () => <Header name="Header Demo" />;
 ```
